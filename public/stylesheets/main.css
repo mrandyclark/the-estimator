@@ -1,0 +1,22 @@
+[contenteditable="true"]{
+	padding: 3px;
+	cursor: pointer;
+}
+
+[contenteditable="true"]:focus {
+	outline: 1px solid #3B90D1;
+}
+
+
+#capability-list li { cursor: pointer; }
+
+.capability-row .feature-name { font-weight: bold;}
+.glyphicon-remove { color: #ccc; cursor: pointer; }
+.glyphicon-remove:hover { color: #3B90D1; }
+
+#sizings-table tbody:after {
+    line-height:1em;
+    content:"-";
+    color:white; /* to hide text */
+    display:block;
+}

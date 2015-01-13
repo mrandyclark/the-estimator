@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="./public/vendor/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./public/vendor/underscore.js"></script>
+	<script type="text/javascript" src="./public/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./public/javascripts/jquery-extensions.js"></script>
+	<script type="text/javascript" src="./public/javascripts/underscore-extensions.js"></script>
+	<script type="text/javascript" src="./public/javascripts/page-managers/index-page-manager.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var pageManager = new PageManager();
+			pageManager.init();
+		});
+	</script>
+
+	<link rel="stylesheet" href="./public/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./public/vendor/bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./public/stylesheets/bootstrap-overrides.css">
+	<link rel="stylesheet" href="./public/stylesheets/main.css">
+</head>
+<body>
+
+<nav role="navigation" class="navbar">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display-->
+		<div class="navbar-header">
+			<button data-target="#main-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="/" class="navbar-brand">The Estimator</a>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<p>Easily estimate an upcoming project based on a set of features. Some other type of disclaimer text to prevent default numbers to getting into actual sizings.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2" id="capability-list">
+			<h2 class="h4">Capabilities</h2>
+		</div>
+		<div class="col-md-10" id="sizings">
+			<h2 class="h4">Project X Sizing</h2>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
